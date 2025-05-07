@@ -1,26 +1,59 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--primary-100: #e6eff5;
+	--primary-300: #343c6a;
+
+	--secondary-100: #b1b1b1;
+	--secondary-200: #8ba3cb;
+	--secondary-300: #f5f7fa;
+	--secondary-400: #718ebf;
+	--secondary-500: #232323;
+	--secondary-600: #2d60ff;
+	--secondary-700: #fff5d9;
+	--secondary-800: #ff4b4a;
+	--secondary-900: #41d4a8;
+	--secondary-1000: #e7edff;
+	--secondary-1001: #dcfaf8;
+	--secondary-1002: #1814f3;
+	--secondary-1003: #edf0f7;
+	--secondary-1004: #16dbcc;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-primary-100: var(--primary-100);
+	--color-primary-300: var(--primary-300);
+
+	--color-secondary-100: var(--secondary-100);
+	--color-secondary-200: var(--secondary-200);
+	--color-secondary-300: var(--secondary-300);
+	--color-secondary-400: var(--secondary-400);
+	--color-secondary-500: var(--secondary-500);
+	--color-secondary-600: var(--secondary-600);
+	--color-secondary-700: var(--secondary-700);
+	--color-secondary-800: var(--secondary-800);
+	--color-secondary-900: var(--secondary-900);
+	--color-secondary-1000: var(--secondary-1000);
+	--color-secondary-1001: var(--secondary-1001);
+	--color-secondary-1002: var(--secondary-1002);
+	--color-secondary-1003: var(--secondary-1003);
+	--color-secondary-1004: var(--secondary-1004);
+}
+
+@layer components {
+	.wrapper {
+		@apply rounded-3xl bg-white mt-4 p-6;
+	}
+
+	.header {
+		@apply text-[22px] font-semibold text-primary-300;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	:root {
+	}
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
