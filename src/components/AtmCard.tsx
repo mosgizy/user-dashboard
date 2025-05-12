@@ -14,7 +14,7 @@ const AtmCard = ({ type }: { type?: string }) => {
 						<h3 className="font-semibold text-xl">$5,756</h3>
 					</div>
 					<Image
-						src={type === 'default' ? '/icons/card.png' : '/icons/chip-primary.png'}
+						src={type === 'default' ? '/icons/chip.png' : '/icons/chip-primary.png'}
 						alt="chip"
 						height={34}
 						width={34}
@@ -31,7 +31,11 @@ const AtmCard = ({ type }: { type?: string }) => {
 					</div>
 				</div>
 			</div>
-			<div className="flex items-center justify-between px-6 py-5 bg-linear-bl bg-gradient-to-r from-white/20 to-white/5 shadow-xs">
+			<div
+				className={`${
+					type !== 'default' && 'border-t border-[#EBEEF2]'
+				} flex items-center justify-between px-6 py-5 bg-linear-bl bg-gradient-to-r from-white/20 to-white/5 shadow-xs`}
+			>
 				<div className="font-semibold text-[22px]">3778 **** **** 1234</div>
 				<Image
 					src={type === 'default' ? '/icons/master-card.png' : '/icons/master-card-primary.png'}

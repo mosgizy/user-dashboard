@@ -9,11 +9,9 @@ const Navbar = () => {
 					<Image src="/icons/search.svg" alt="search" height={20} width={20} />
 					<input
 						type="text"
-						className="outline-none border-none pl-2 text-secondary-200 text-[15px]"
+						placeholder="search for something"
+						className="outline-none border-none pl-2 placeholder-secondary-200 text-secondary-200 text-[15px]"
 					/>
-					<span className="group-focus-within:hidden text-[15px] text-secondary-200 absolute left-12">
-						search for something
-					</span>
 				</label>
 				<div className="bg-secondary-300 rounded-full w-[50px] h-[50px] flex justify-center items-center">
 					<Image src="/icons/setting.svg" alt="setting" height={25} width={25} />
