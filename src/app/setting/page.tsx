@@ -3,7 +3,6 @@
 import EditProfile from '@/components/EditProfile';
 import Preference from '@/components/Preference';
 import Security from '@/components/Security';
-import Toggle from '@/components/Toggle';
 import React, { useState } from 'react';
 
 const navs = ['Edit Profile', 'Prefrences', 'Security'];
