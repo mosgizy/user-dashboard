@@ -55,11 +55,6 @@ const Sidebar = () => {
 			link: '/service',
 		},
 		{
-			title: 'my priviledges',
-			icon: priviledgeIcon,
-			link: '/priviledge',
-		},
-		{
 			title: 'setting',
 			icon: settingIcon,
 			link: '/setting',
